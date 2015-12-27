@@ -1,4 +1,3 @@
----
 {
   "context": "http://schema.org",
   "type": "Social event",
@@ -14,24 +13,16 @@
     "url": "http://barcelonajs.org",
     "duration": "P2H"
   },
-  "offers": {
-    "type": "Offer",
-    "url": "https://ti.to/barcelonajs",
-    "price": "0",
-    "priceCurrency": "EUR",
-    "availability": "http://schema.org/InStock"
-  },
   "doorTime": "18:45",
   "inLanguage": {
     "type": "Language",
     "name": "English"
   },
-  "startDate": "20141222T19:00",
+  "startDate": "20140617T19:00",
   "name": "BarcelonaJS",
-  "id": "20141222-barcelonajs",
-  "url": "/event/20141222-barcelonajs",
+  "id": "20140617-barcelonajs",
+  "url": "/event/20140617-barcelonajs",
   "organizer": {
-    "context": "http://schema.org",
     "type": "Organization",
     "address": {
       "type": "PostalAddress",
@@ -46,14 +37,13 @@
   "performer": [
     {
       "type": "Person",
-      "name": "Javier Arias",
-      "id": "20141222-fullstack-message-bus-with-javascript-rabbitmq-and-postaljs",
-      "twitter": "@javier_arilos",
-      "sameAs": "https://twitter.com/@@javier_arilos",
-      "url": "/talk/20141222-fullstack-message-bus-with-javascript-rabbitmq-and-postaljs.html"
+      "name": "Marijn Haverbeke",
+      "id": "20140617-tern-making-your-editor-understand-js",
+      "twitter": "marijnjh",
+      "sameAs": "https://twitter.com/@marijnjh",
+      "url": "/talk/20140617-tern-making-your-editor-understand-js.html",
+      "image": "https://www.webrebels.org/img/speakers/marijn.png"
     }
   ],
   "layout": "page.html"
 }
-
----

@@ -45,13 +45,33 @@ var bcnjs = function bcnjs(opts) {
       }
     }
 
-    nextEvent.talks = [];
+    if (nextEvent) {
+      nextEvent.talks = [];
 
-    for (var i = 0; i < nextEvent.performer.length; i++) {
-      var talk = files['talk/' + nextEvent.performer[i].id + '.md'];
-      if (talk.name) {
-        nextEvent.talks.push(talk);
+      for (var i = 0; i < nextEvent.performer.length; i++) {
+        var talk = files['talk/' + nextEvent.performer[i].id + '.md'];
+        if (talk.name) {
+          nextEvent.talks.push(talk);
+        }
       }
+    } else {
+      nextEvent = {
+        'context': 'http://schema.org',
+        'organizer': {
+          'type': 'Organization',
+          'address': {
+            'type': 'PostalAddress',
+            'addressLocality': 'Barcelona, Spain',
+            'postalCode': '08003',
+            'streetAddress': 'C/ Mare de Deu del Pilar 20'
+          },
+          'email': 'hola(at)barcelonajs.org',
+          'name': 'BarcelonaJS',
+          'url': 'http://barcelonajs.org'
+        },
+        'performer': [],
+        'layout': 'page.html'
+      };
     }
 
     metalsmith._metadata.nextEvent = nextEvent;
@@ -77,7 +97,7 @@ Metalsmith(__dirname)
   }))
   .use(collections({
     events: {
-      pattern: 'event/*.md',
+      pattern: 'event/*.json',
       sortBy: 'startDate',
       reverse: true
     }

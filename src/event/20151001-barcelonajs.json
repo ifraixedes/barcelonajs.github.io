@@ -1,4 +1,3 @@
----
 {
   "context": "http://schema.org",
   "type": "Social event",
@@ -14,24 +13,16 @@
     "url": "http://barcelonajs.org",
     "duration": "P2H"
   },
-  "offers": {
-    "type": "Offer",
-    "url": "https://ti.to/barcelonajs",
-    "price": "0",
-    "priceCurrency": "EUR",
-    "availability": "http://schema.org/InStock"
-  },
   "doorTime": "18:45",
   "inLanguage": {
     "type": "Language",
     "name": "English"
   },
-  "startDate": "20151209T19:00",
+  "startDate": "20151001T19:00",
   "name": "BarcelonaJS",
-  "id": "20151209-barcelonajs",
-  "url": "/event/20151209-barcelonajs",
+  "id": "20151001-barcelonajs",
+  "url": "/event/20151001-barcelonajs",
   "organizer": {
-    "context": "http://schema.org",
     "type": "Organization",
     "address": {
       "type": "PostalAddress",
@@ -46,15 +37,22 @@
   "performer": [
     {
       "type": "Person",
-      "name": "Raúl Jiménez",
-      "id": "20151209-angular-2-alpha-47",
-      "twitter": "elecash",
-      "sameAs": "https://twitter.com/@elecash",
-      "url": "/talk/20151209-angular-2-alpha-47.html",
-      "image": "https://avatars2.githubusercontent.com/u/790704?v=3&s=400"
+      "name": "Ivan Fraixedes",
+      "id": "20151001-an-introduction-to-lovefield-cross-browser-rdb",
+      "twitter": "ifraixedes",
+      "sameAs": "https://twitter.com/@ifraixedes",
+      "url": "/talk/20151001-an-introduction-to-lovefield-cross-browser-rdb.html",
+      "image": "https://avatars2.githubusercontent.com/u/1731633?v=3&s=400"
+    },
+    {
+      "type": "Person",
+      "name": "Jordi Gomez",
+      "id": "20151001-nodejs-threading-mode",
+      "twitter": "jgomezb79",
+      "sameAs": "https://twitter.com/@jgomezb79",
+      "url": "/talk/20151001-nodejs-threading-mode.html",
+      "image": "https://avatars2.githubusercontent.com/u/1548185?v=3&s=400"
     }
   ],
   "layout": "page.html"
 }
-
----

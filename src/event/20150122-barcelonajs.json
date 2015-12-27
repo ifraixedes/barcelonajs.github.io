@@ -1,4 +1,3 @@
----
 {
   "context": "http://schema.org",
   "type": "Social event",
@@ -14,24 +13,16 @@
     "url": "http://barcelonajs.org",
     "duration": "P2H"
   },
-  "offers": {
-    "type": "Offer",
-    "url": "https://ti.to/barcelonajs",
-    "price": "0",
-    "priceCurrency": "EUR",
-    "availability": "http://schema.org/InStock"
-  },
   "doorTime": "18:45",
   "inLanguage": {
     "type": "Language",
     "name": "English"
   },
-  "startDate": "20141127T19:00",
+  "startDate": "20150122T19:00",
   "name": "BarcelonaJS",
-  "id": "20141127-barcelonajs",
-  "url": "/event/20141127-barcelonajs",
+  "id": "20150122-barcelonajs",
+  "url": "/event/20150122-barcelonajs",
   "organizer": {
-    "context": "http://schema.org",
     "type": "Organization",
     "address": {
       "type": "PostalAddress",
@@ -46,22 +37,20 @@
   "performer": [
     {
       "type": "Person",
-      "name": "Eduard Tomàs",
-      "id": "20141127-una-tapa-de-es6-por-favor",
-      "twitter": "eiximenis",
-      "sameAs": "https://twitter.com/@eiximenis",
-      "url": "/talk/20141127-una-tapa-de-es6-por-favor.html"
+      "name": "Marijn Haverbeke",
+      "id": "20150122-serious-text-editing-in-the-browser",
+      "twitter": "marijnjh",
+      "sameAs": "https://twitter.com/@marijnjh",
+      "url": "/talk/20150122-serious-text-editing-in-the-browser.html"
     },
     {
       "type": "Person",
-      "name": "Sergi Cortés",
-      "id": "20141127-una-simple-app-con-meteor-10",
-      "twitter": "sergi_c",
-      "sameAs": "https://twitter.com/@sergi_c",
-      "url": "/talk/20141127-una-simple-app-con-meteor-10.html"
+      "name": "Jorge Dias",
+      "id": "20150122-development-environments-using-fig",
+      "twitter": "dias_jorge",
+      "sameAs": "https://twitter.com/@dias_jorge",
+      "url": "/talk/20150122-development-environments-using-fig.html"
     }
   ],
   "layout": "page.html"
 }
-
----
