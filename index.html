@@ -1,3 +1,185 @@
+<!doctype html>
 <html>
-  Hello World
+    <head>
+        <title>BarcelonaJS</title>
+        <meta charset="utf-8">
+        <meta name="author" content="BarcelonaJS">
+        <meta name="description" content="BarcelonaJS Website.">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta property="og:site_name" content="BarcelonaJS">
+        <meta property="og:title" content="BarcelonaJS">
+        <meta property="og:url" content="http://barcelonajs.org">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@bcnjs">
+        <meta name="twitter:title" content="BarcelonaJS">
+        <meta name="description" content="BarcelonaJS is a monthly event for JavaScript developers, geeks and techies.">
+        <meta property="og:description" content="BarcelonaJS is a monthly event for JavaScript developers, geeks and techies.">
+        <meta name="twitter:description" content="BarcelonaJS is a monthly event for JavaScript developers, geeks and techies.">
+        <meta property="og:image" content="">
+        <meta name="twitter:image" content="">
+        <link href="assets/css/flexboxgrid.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/barcelonajs.css" rel="stylesheet" type="text/css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="auth0-variables.js"></script>
+        <script src="barcelona.js"></script>
+    </head>
+    <body>
+        <nav class="menu row middle-xs center-xs">
+            <div class="col-xs-12 col-md-2">
+                <img src="assets/img/bcnjs.png" class="logo" alt="BarcelonaJS Logo">
+            </div>
+            <div class="col-xs-12 col-md-10 end-md">
+                <ul class="menu-items">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/code-of-conduct.html">Code of Conduct</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header class="main row center-xs middle-xs">
+          <div class="overlay">
+            <div class="col-xs-12">
+              <h1>BarcelonaJS</h1>
+              <h4> @ <a href=""></a></h4>
+              <a href="#" class="btn dark">Join Us!</a>
+            </div>
+          </div>
+        </header>
+        <section class="talks">
+          <div class="wrap center-xs">
+            <h2 class="title">Talks</h2>
+            <div class="row center-xs">
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="wrap row">
+            <article class="about-info col-xs-12 col-sm-4">
+              <h4>For Everyone</h4>
+              <p>We think coding is awesome and everyone should feel welcome at our event. This includes that we are expecting all participants to be awesome to each other and respect the <a href="/code-of-conduct.html">Code of Conduct</a>.</p>
+            </article>
+            <article class="about-info col-xs-12 col-sm-4">
+              <h4>Open Source</h4>
+              <p>Open source is the heart of BarcelonaJS. All our events, our website and our software are open source and can be modified by everyone.</p>
+            </article>
+            <article class="about-info col-xs-12 col-sm-4">
+              <h4>Non Profit</h4>
+              <p>BarcelonaJS is a registered non-profit association in Spain and is subject to Spanish law. All our events are not-for-profit and run by volunteers.</p>
+            </article>
+          </div>
+        </section>
+        <section class="info wrap row">
+            <div class="col-xs-12 center-xs">
+                <h2 class="title">Info</h2>
+            </div>
+            <section class="col-xs-12 col-md-6">
+                <h4>Come to BarcelonaJS</h4>
+                <h4>Join Us!</h4>
+                <div class="row buttons">
+                    <div class="col-xs-6 col-sm-3 col-md-4">
+                        <a href="#" class="btn green">Join Us</a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-4">
+                        <a href="#" class="btn blue">Calendar</a>
+                    </div>
+                </div>
+                <h4>Where?</h4>
+                <div class="map">
+                    <iframe width="100%" height="250px" frameBorder="0" src='https://a.tiles.mapbox.com/v3/bcnjs.gnm5ha8k/mm/zoompan,geocoder,share.html?secure=1#17/41.38731/2.17180'></iframe>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <h4>Previous Talks</h4>         <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-4" style="margin-top: .4rem;">
+                        <a href="#" class="btn green">Read more</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="sponsors">
+            <div class="wrap">
+                <div class="col-xs-12 center-xs">
+                    <h2 class="title">Sponsors</h2>
+                </div>
+                <div class="row center-xs">
+                    <div class="col-xs-12 col-md-4 center-xs">
+                        <a href="http://3scale.com/?ref=bcnjssite" style="background-image: url(/assets/img/sponsors/3scale.svg)" class="sponsor-logo">
+                            <span>3scale</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-4 center-xs">
+                        <a href="http://redradix.com" style="background-image: url(/assets/img/sponsors/redradix.svg)" class="sponsor-logo">
+                            <span>redradix</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chapters wrap">
+          <div class="col-xs-12 center-xs">
+            <h2 class="title">Chapters</h2>
+          </div>
+          <div class="row center-xs">
+              <div class="col-xs-6 col-md-3">
+                <a href="http://barcelona.nodeconf.com" style="background-image: url(/assets/img/chapters/nodeconf.svg)" class="chapter-logo">
+                  <span>NodeConf Barcelona</span>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="http://nodeschool.io/barcelona" style="background-image: url(/assets/img/chapters/nodeschool.svg)" class="chapter-logo">
+                  <span>Barcelona Nodeschool</span>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="http://angular.barcelonajs.org" style="background-image: url(/assets/img/chapters/angularbcn.png)" class="chapter-logo">
+                  <span>AngularJS Barcelona</span>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="http://node.barcelonajs.org" style="background-image: url(/assets/img/chapters/nodebcn.jpg)" class="chapter-logo">
+                  <span>Node.js Barcelona</span>
+                </a>
+              </div>
+          </div>
+        </section>
+        <footer class="row center-xs">
+            <div class="col-xs-12 col-sm-4">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/code-of-conduct.html">Code Of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 center-xs">
+                <h3>About</h3>
+                <img src="assets/img/bcnjs.png" class="logo" alt="BarcelonaJS Logo"><br>
+                <div class="social">
+                    <a href="https://twitter.com/bcnjs">
+                        <img src="assets/img/icons/twitter.svg" class="icon">
+                    </a>
+                    <a href="https://twitter.com/bcnjs">
+                        <img src="assets/img/icons/github.svg" class="icon">
+                    </a>
+                    <a href="https://plus.google.com/communities/115705669406517039298">
+                        <img src="assets/img/icons/googleplus.svg" class="icon">
+                    </a>
+                    <a href="https://vimeo.com/barcelonajs">
+                        <img src="assets/img/icons/vimeo.svg" class="icon">
+                    </a>
+                    <a href="https://flickr.com/groups/barcelonajs/">
+                        <img src="assets/img/icons/flickr.svg" class="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h3>Organizers</h3>
+            </div>
+            <div class="github col-xs-12">
+                <a href="http://barcelonajs.org">BarcelonaJS</a> 2015 • Hosted on GitHub
+            </div>
+        </footer>
+    </body>
 </html>
