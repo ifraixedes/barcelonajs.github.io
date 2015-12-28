@@ -41,7 +41,11 @@ $(document).ready(function() {
 
   if ($('#ge-btn-login').length > 0) {
     $('#ge-btn-login').on('click', function() {
-      lock.show(function(err, profile, token) {
+      lock.show({
+        authParams: {
+          scope: 'openid identities'
+        }
+      }, function(err, profile, token) {
         if (err) {
           // Error callback
           console.error('Something went wrong: ', err);
@@ -74,7 +78,7 @@ $(document).ready(function() {
       name: 'BarcelonaJS',
       description: 'BarcelonaJS Premium Job Listing',
       currency: 'eur',
-      billingAddress:true,
+      billingAddress: true,
       email: $('#email').val(),
       allowRememberMe: false,
       zipCode: true,
@@ -88,7 +92,7 @@ $(document).ready(function() {
       name: 'BarcelonaJS',
       description: 'BarcelonaJS Platinum Job Listing',
       currency: 'eur',
-      billingAddress:true,
+      billingAddress: true,
       email: $('#email').val(),
       allowRememberMe: false,
       zipCode: true,
